@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20251219-1354-Experimental"
+	Name="rc3-N21260-202"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="rc3-N21260-202"
+	OSRelease="6.8.0-90-generic"
+	OSVersion="#91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="186"
+	ProcessorCacheSize="18432"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="12"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15542"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="1746.35"
+	>
+	<Testing>
+		<StartDateTime>Dec 19 21:54 CST</StartDateTime>
+		<StartTestTime>1766152489</StartTestTime>
+		<TestList>
+			<Test>./test_batch</Test>
+			<Test>./test_packet_handler</Test>
+			<Test>./test_serial_controller</Test>
+			<Test>./test_transmit_verify</Test>
+			<Test>./test_main</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_batch</Name>
+			<Path>.</Path>
+			<FullName>./test_batch</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_batch.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_batch.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_batch" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_batch.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0547587</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_batch.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_batch.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_batch" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_batch.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/rc3/WeaponDockingSim/build/serial_pkg':
+ - /home/rc3/WeaponDockingSim/build/serial_pkg/test_batch --gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_batch.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_batch.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_packet_handler</Name>
+			<Path>.</Path>
+			<FullName>./test_packet_handler</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_packet_handler.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_packet_handler.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_packet_handler" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_packet_handler.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0527054</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_packet_handler.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_packet_handler.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_packet_handler" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_packet_handler.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/rc3/WeaponDockingSim/build/serial_pkg':
+ - /home/rc3/WeaponDockingSim/build/serial_pkg/test_packet_handler --gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_packet_handler.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_packet_handler.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_serial_controller</Name>
+			<Path>.</Path>
+			<FullName>./test_serial_controller</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_serial_controller.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_serial_controller.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_serial_controller" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_serial_controller.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.052776</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_serial_controller.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_serial_controller.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_serial_controller" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_serial_controller.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/rc3/WeaponDockingSim/build/serial_pkg':
+ - /home/rc3/WeaponDockingSim/build/serial_pkg/test_serial_controller --gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_serial_controller.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_serial_controller.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_transmit_verify</Name>
+			<Path>.</Path>
+			<FullName>./test_transmit_verify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_transmit_verify.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_transmit_verify.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_transmit_verify" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_transmit_verify.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0496722</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_transmit_verify.gtest.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_gtest/test_transmit_verify.txt" "--command" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_transmit_verify" "--gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_transmit_verify.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/rc3/WeaponDockingSim/build/serial_pkg':
+ - /home/rc3/WeaponDockingSim/build/serial_pkg/test_transmit_verify --gtest_output=xml:/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_transmit_verify.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_transmit_verify.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_main</Name>
+			<Path>.</Path>
+			<FullName>./test_main</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_pytest/test_main.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/rc3/WeaponDockingSim/src/serial_pkg/test/test_main.py" "-o" "cache_dir=/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_pytest/test_main/.cache" "--junit-xml=/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml" "--junit-prefix=serial_pkg"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.384517</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml" "--package-name" "serial_pkg" "--output-file" "/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_pytest/test_main.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/rc3/WeaponDockingSim/src/serial_pkg/test/test_main.py" "-o" "cache_dir=/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_pytest/test_main/.cache" "--junit-xml=/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml" "--junit-prefix=serial_pkg"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/rc3/WeaponDockingSim/build/serial_pkg':
+ - /usr/bin/python3 -u -m pytest /home/rc3/WeaponDockingSim/src/serial_pkg/test/test_main.py -o cache_dir=/home/rc3/WeaponDockingSim/build/serial_pkg/ament_cmake_pytest/test_main/.cache --junit-xml=/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml --junit-prefix=serial_pkg
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: build/serial_pkg/ament_cmake_pytest/test_main/.cache
+rootdir: /home/rc3/WeaponDockingSim
+plugins: ament-flake8-0.12.14, ament-xmllint-0.12.14, ament-copyright-0.12.14, ament-pep257-0.12.14, launch-testing-ros-0.19.13, ament-lint-0.12.14, launch-pytest-1.0.13, launch-testing-1.0.13, colcon-core-0.20.1, cov-3.0.0
+collected 1 item
+
+../../src/serial_pkg/test/test_main.py .                                 [100%]
+
+- generated xml file: /home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml -
+============================== 1 passed in 0.12s ===============================
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/rc3/WeaponDockingSim/build/serial_pkg/test_results/serial_pkg/test_main.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>pytest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Dec 19 21:54 CST</EndDateTime>
+		<EndTestTime>1766152490</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

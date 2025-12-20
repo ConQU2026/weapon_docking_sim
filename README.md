@@ -4,6 +4,7 @@
 ## environment setting
 ```bash
 export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(ros2 pkg prefix weapon_dock)/share
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p use_sim_time:=true
 ```
 
 ```bash

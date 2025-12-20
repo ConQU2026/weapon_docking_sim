@@ -38,7 +38,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         
-    ], ['resource', 'launch']),
+    ], ['resource', 'launch', 'urdf', 'config']),
     
     install_requires=['setuptools'],
     zip_safe=True,
@@ -48,11 +48,12 @@ setup(
     license='TODO: License declaration',
     extras_require={
         'test': [
-            'pytest',
+            # 'pytest',
         ],
     },
     entry_points={
         'console_scripts': [
+            'js_convert_node = weapon_dock.js_convert_node:main',
         ],
     },
 )
