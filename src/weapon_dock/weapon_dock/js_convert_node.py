@@ -16,12 +16,17 @@ class JsConvertNode(Node):
     def joy_callback(self, msg):
         twist = Twist()
 
-        key_list = msg.axes
-        
-        twist.linear.x = key_list[1] * 0.5  
-        
-        twist.angular.z = key_list[3] * 1.0
+        axes = msg.axes
 
+        if len(key_list) > 1:
+            twist.linear.x = key_list[1] * 0.5
+        else:
+            twist.linear.x = 0.0
+
+        if len(key_list) > 3:
+            twist.angular.z = key_list[3] * 1.0
+        else:
+            twist.angular.z = 0.0
         self.publisher_.publish(twist)
         
         self.get_logger().info(f'Published cmd_vel: linear.x={twist.linear.x}, angular.z={twist.angular.z}') 

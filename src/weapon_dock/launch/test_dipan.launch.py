@@ -9,9 +9,10 @@ from launch_ros.descriptions import ComposableNode
 def generate_launch_description():
     weapon_dock_pkg = FindPackageShare('weapon_dock')
     joy_pkg = FindPackageShare('joy')
-    serial_pkg = FindPackageShare('serial_pkg')
+    auto_serial_bridge_pkg = FindPackageShare('auto_serial_bridge')
 
-    serial_config_path = PathJoinSubstitution([serial_pkg, 'config', 'serial_data.yaml'])
+    serial_config_path = PathJoinSubstitution(
+        [auto_serial_bridge_pkg, 'config', 'serial_data.yaml'])
 
     # js_convert_node = Node(
     #     package='weapon_dock',
@@ -21,18 +22,18 @@ def generate_launch_description():
     # )
     
     container = ComposableNodeContainer(
-            name= "serial_pkg" + '_container',
+            name='serial_pkg_container',
             namespace= '',
             package='rclcpp_components',
             executable='component_container', 
             arguments=['--ros-args', '--log-level', 'debug'],
             composable_node_descriptions=[
                 ComposableNode(
-                    package= "serial_pkg",
-                    plugin='serial_pkg::SerialController', # 必须与宏注册的名称一致
+                    package="auto_serial_bridge",
+                    plugin='auto_serial_bridge::SerialController',
                     name='serial_controller',
-                    parameters=[serial_config_path],     
-                    extra_arguments=[{'use_intra_process_comms': True}] # 开启进程内通信
+                    parameters=[serial_config_path],
+                    extra_arguments=[{'use_intra_process_comms': True}]
                 ),
                 # 你可以在这里继续添加其他组件，让它们跑在同一个进程里
                 
