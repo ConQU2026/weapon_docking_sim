@@ -11,8 +11,10 @@ def generate_launch_description():
     joy_pkg = FindPackageShare('joy')
     auto_serial_bridge_pkg = FindPackageShare('auto_serial_bridge')
 
+
     serial_config_path = PathJoinSubstitution(
         [auto_serial_bridge_pkg, 'config', 'serial_data.yaml'])
+
 
     js_convert_node = Node(
         package='weapon_dock',
