@@ -36,8 +36,9 @@ ros2 launch weapon_dock test_chassis_sim.launch.py
 ```bash
 git clone git@github.com:ConQU2026/auto_serial_bridge.git
 git clone git@github.com:stm32f303ret6/livox_laser_simulation_RO2.git
+git clone git@github.com:Ericsii/FAST_LIO_ROS2.git
 ```
 
 
-# Fast-Lio 测试, 效果还行
+# Fast-Lio2 测试, 效果还行
 ![test](./assets/fast-lio-test.png)
