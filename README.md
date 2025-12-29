@@ -27,7 +27,7 @@ sudo apt update && sudo apt install -y \
 And then
 
 ```bash
-ros2 launch weapon_dock test_chassis_sim.launch.py
+ros2 launch weapon_dock weapon_dock_sim.launch.py
 ```
 
 
