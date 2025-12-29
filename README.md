@@ -23,7 +23,7 @@ sudo apt update && sudo apt install -y \
 
 
 # 运行仿真
-先colcon build然后source balabal的
+先colcon build然后source balabala的
 And then
 
 ```bash
