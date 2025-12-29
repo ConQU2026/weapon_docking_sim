@@ -21,14 +21,16 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='robot_state_publisher',
         parameters=[
-            {'robot_description': robot_urdf}
+            {'robot_description': robot_urdf},
+            {'use_sim_time': True}
         ]
     )
 
     joint_state_publisher_node = Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
-        name='joint_state_publisher'
+        name='joint_state_publisher',
+        parameters=[{'use_sim_time': True}]
     )
 
     gazebo_server = IncludeLaunchDescription(
@@ -40,7 +42,7 @@ def generate_launch_description():
             ])
         ]),
         launch_arguments={
-            'pause': 'true'
+            'pause': 'false',
         }.items()
     )
 
@@ -59,15 +61,21 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=[
             '-entity', 'R2',
-            '-topic', 'robot_description'
+            '-topic', 'robot_description',
+            '-x', '0.0', '-y', '0.0', '-z', '0.1',
         ],
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': True}]
     )
+
+
+
 
     return LaunchDescription([
         robot_state_publisher_node,
-        joint_state_publisher_node,
+        # joint_state_publisher_node,
         gazebo_server,
         gazebo_client,
         urdf_spawn_node,
+
     ])

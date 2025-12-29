@@ -58,8 +58,7 @@ class JsConvertNode(Node):
             
         self.publisher_.publish(twist)
        
-        # Debug 输出发布的 cmd_vel 细节 
-        self.get_logger().debug(f'Published cmd_vel: linear.x={twist.linear.x}, linear.y={twist.linear.y}angular.z={twist.angular.z}') 
+        self.get_logger().debug(f'Published cmd_vel: linear.x={twist.linear.x}, linear.y={twist.linear.y}, angular.z={twist.angular.z}') 
 
 def main(args=None):
 

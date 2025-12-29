@@ -9,11 +9,6 @@ from launch_ros.descriptions import ComposableNode
 def generate_launch_description():
     weapon_dock_pkg = FindPackageShare('weapon_dock')
     joy_pkg = FindPackageShare('joy')
-    auto_serial_bridge_pkg = FindPackageShare('auto_serial_bridge')
-
-
-    serial_config_path = PathJoinSubstitution(
-        [auto_serial_bridge_pkg, 'config', 'serial_data.yaml'])
 
 
     js_convert_node = Node(
@@ -35,10 +30,9 @@ def generate_launch_description():
                 
                 composable_node_descriptions=[
                     ComposableNode(
-                        package="auto_serial_bridge",
+                        package="auto_serial_bridge",   
                         plugin='auto_serial_bridge::SerialController',
-                        name='serial_controller', # <--- 就是这个名字
-                        parameters=[serial_config_path],
+                        name='serial_controller', 
                         extra_arguments=[{'use_intra_process_comms': True}]
                     ),
                     
