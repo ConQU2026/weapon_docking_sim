@@ -1,3 +1,8 @@
+# RC2026 场地仿真
+![ROS2](https://img.shields.io/badge/ROS2-Humble-blue)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-orange)
+![License](https://img.shields.io/badge/License-Apache%202.0-green)
+
 # 依赖安装
 
 ```bash
